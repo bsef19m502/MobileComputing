@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button link,lesson,quiz;
+    Button link,lesson,quiz,list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent in=new Intent(MainActivity.this,Lessons.class);
+                startActivity(in);
+
+            }
+        });
+        quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in=new Intent(MainActivity.this,Quiz.class);
+                startActivity(in);
+
+            }
+        });
+        list.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in=new Intent(MainActivity.this,List.class);
                 startActivity(in);
 
             }
