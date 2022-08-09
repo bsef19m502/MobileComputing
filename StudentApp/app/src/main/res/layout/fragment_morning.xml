@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MorningFragment"
+    tools:context=".Assignment3.MorningFragment"
     android:background="#9C27B0"
     >
 

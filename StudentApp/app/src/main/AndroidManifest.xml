@@ -10,19 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentApp">
         <activity
-            android:name=".Shifts"
+            android:name=".lab3.StudentActivity"
             android:exported="false" />
         <activity
-            android:name=".Departments"
+            android:name=".lab4.StudentView"
             android:exported="false" />
         <activity
-            android:name=".Prospectus"
+            android:name=".Assignment3.Shifts"
             android:exported="false" />
         <activity
-            android:name=".Menu"
+            android:name=".Assignment3.Departments"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".Assignment3.Prospectus"
+            android:exported="false" />
+        <activity
+            android:name=".Assignment3.Menu"
+            android:exported="false" />
+        <activity
+            android:name=".Assignment2.Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,7 +37,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".assignment1.MainActivity"
             android:exported="false" />
     </application>
 

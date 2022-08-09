@@ -4,20 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Assignment3.Departments">
+    tools:context=".lab3.StudentActivity">
 
     <Button
-        android:id="@+id/change"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click to View about Computer Science"
+        android:id="@+id/changeFrag"
+        android:text="Change Fragment"
         android:layout_centerHorizontal="true"
- />
+
+        ></Button>
     <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_below="@+id/changeFrag"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/change"
-        android:id="@+id/Fragment_container">
+        ></FrameLayout>
 
-    </FrameLayout>
 </RelativeLayout>
