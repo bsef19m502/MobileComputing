@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentApp">
         <activity
+            android:name=".assignment4.Base"
+            android:exported="false" />
+        <activity
+            android:name=".assignment4.LoginAssignment4"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".lab3.StudentActivity"
             android:exported="false" />
         <activity
@@ -29,13 +41,7 @@
             android:exported="false" />
         <activity
             android:name=".Assignment2.Login"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".assignment1.MainActivity"
             android:exported="false" />

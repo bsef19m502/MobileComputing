@@ -43,8 +43,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                 Toast.makeText(view.getContext(), st.getName(), Toast.LENGTH_SHORT).show();
             }
         });
-
-
     }
 
     @Override
