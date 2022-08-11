@@ -7,7 +7,7 @@
     android:layout_height="80dp"
     android:id="@+id/dp"
     android:layout_margin="12dp"
-    android:src="@drawable/ic_student">
+    android:src="@mipmap/ic_launcher">
 
 </ImageView>
     <TextView

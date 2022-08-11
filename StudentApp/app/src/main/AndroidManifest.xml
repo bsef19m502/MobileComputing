@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentApp">
         <activity
+            android:name=".assignment4.SignUpAssignment4"
+            android:exported="false" />
+        <activity
             android:name=".assignment4.Base"
             android:exported="false" />
         <activity

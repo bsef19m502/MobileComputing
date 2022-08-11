@@ -1,16 +1,27 @@
 package com.example.studentapp.assignment4;
 
 public class StudentNameCourse {
+    int img;
     String name;
     String course;
 
-    public StudentNameCourse(String name, String course) {
+
+    public StudentNameCourse(int img, String name, String course) {
+        this.img = img;
         this.name = name;
         this.course = course;
     }
 
     public String getName() {
         return name;
+    }
+
+    public int getImg() {
+        return img;
+    }
+
+    public void setImg(int img) {
+        this.img = img;
     }
 
     public void setName(String name) {

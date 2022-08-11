@@ -3,6 +3,7 @@ package com.example.studentapp.assignment4;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +30,8 @@ public class FragmentRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.V
 
         studentNCViewHolder.studentName.setText(st.getName());
         studentNCViewHolder.studentCourse.setText(st.getCourse());
+        studentNCViewHolder.image.setImageResource(st.getImg());
+
         studentNCViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,11 +57,13 @@ public class FragmentRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.V
 
         TextView studentName;
         TextView studentCourse;
+        ImageView image;
         public StudentNCViewHolder(@NonNull View itemView) {
             super(itemView);
 
             studentName=itemView.findViewById(R.id.naam);
             studentCourse=itemView.findViewById(R.id.course);
+            image=itemView.findViewById(R.id.dp);
 
         }
     }
