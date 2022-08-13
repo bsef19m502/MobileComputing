@@ -52,7 +52,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     public void setData(ArrayList<Student> StudentArrayList){
         this.studentArrayList=StudentArrayList;
         notifyDataSetChanged();
-
     }
 //to find views of single list xml file
     public static class StudentViewHolder extends RecyclerView.ViewHolder{

@@ -15,7 +15,7 @@ import com.example.studentapp.R;
 import java.util.ArrayList;
 
 public class FragmentRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
-    ArrayList<StudentNameCourse> studentNameCoursesArrayList=new ArrayList<StudentNameCourse>();
+    ArrayList<portal> portalArrayList=new ArrayList<portal>();
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -25,7 +25,7 @@ public class FragmentRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.V
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        StudentNameCourse st=studentNameCoursesArrayList.get(position);
+        portal st=portalArrayList.get(position);
         FragmentRecyclerAdapter.StudentNCViewHolder studentNCViewHolder= (FragmentRecyclerAdapter.StudentNCViewHolder) holder;
 
         studentNCViewHolder.studentName.setText(st.getName());
@@ -43,11 +43,11 @@ public class FragmentRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.V
 
     @Override
     public int getItemCount() {
-        return studentNameCoursesArrayList.size();
+        return portalArrayList.size();
     }
 
-    public void setData(ArrayList<StudentNameCourse> StudentArrayList){
-        this.studentNameCoursesArrayList=StudentArrayList;
+    public void setData(ArrayList<portal> StudentArrayList){
+        this.portalArrayList=StudentArrayList;
         notifyDataSetChanged();
 
     }

@@ -64,7 +64,9 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="15pt"
         android:layout_marginRight="40dp"
-        android:hint="Password"></EditText>
+        android:hint="Password"
+        android:inputType="textPassword"
+        ></EditText>
     <EditText
         android:id="@+id/passRe"
         android:layout_width="match_parent"
@@ -73,7 +75,9 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="15pt"
         android:layout_marginRight="40dp"
-        android:hint="Re-enter Password"></EditText>
+        android:hint="Re-enter Password"
+        android:inputType="textPassword"
+        ></EditText>
 
 
 

@@ -1,12 +1,12 @@
 package com.example.studentapp.assignment4;
 
-public class StudentNameCourse {
+public class portal {
     int img;
     String name;
     String course;
 
 
-    public StudentNameCourse(int img, String name, String course) {
+    public portal(int img, String name, String course) {
         this.img = img;
         this.name = name;
         this.course = course;

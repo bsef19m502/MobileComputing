@@ -18,9 +18,17 @@
         ></TextView>
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="540dp"
         android:id="@+id/LoginFragment_container"
         android:layout_below="@+id/stu"
         ></FrameLayout>
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DONE"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_below="@+id/LoginFragment_container"
+        android:layout_gravity="bottom"
+        ></Button>
 </RelativeLayout>

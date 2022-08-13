@@ -24,7 +24,7 @@ public class Base extends AppCompatActivity {
         //status.setText(getIntent().getStringExtra("Email"));
         String email=getIntent().getStringExtra("Email");
         if(email.equals(Constants.firstTeacherEmail)||email.equals(Constants.secondTeacherEmail)){
-            status.setText("Student");
+            status.setText("Students");
         }
         else{
             status.setText("Subjects");
@@ -35,7 +35,7 @@ public class Base extends AppCompatActivity {
 
         fm=getFragmentManager();
         ft=fm.beginTransaction();
-        TeacherFragment tf=new TeacherFragment();
+        UserFragment tf=new UserFragment();
         tf.setArguments(bn);
 
         ft.add(R.id.LoginFragment_container,tf);
