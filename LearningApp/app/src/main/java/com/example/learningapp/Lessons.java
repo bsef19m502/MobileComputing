@@ -46,12 +46,6 @@ String val;
         hashMap.put("n", "Nose");
         hashMap.put("m", "Moon");
 
-
-
-
-
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lessons);
 

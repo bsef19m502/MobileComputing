@@ -15,9 +15,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         link=findViewById(R.id.code);
         lesson=findViewById(R.id.lessons);
         quiz=findViewById(R.id.quiz);
+        list=findViewById(R.id.list);
 
         link.setOnClickListener(new View.OnClickListener() {
             @Override

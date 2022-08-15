@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Semester6/MC/Layout/LearningApp/app/src/main/res/layout/activity_lessons.xml" value="0.22" />
+        <entry key="..\:/Semester6/MC/Layout/LearningApp/app/src/main/res/layout/activity_list.xml" value="0.20416666666666666" />
         <entry key="..\:/Semester6/MC/Layout/LearningApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Semester6/MC/Layout/LearningApp/app/src/main/res/layout/activity_page.xml" value="0.25" />
         <entry key="..\:/Semester6/MC/Layout/LearningApp/app/src/main/res/layout/activity_quiz.xml" value="0.20416666666666666" />
+        <entry key="..\:/Semester6/MC/Layout/LearningApp/app/src/main/res/layout/singlelist.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

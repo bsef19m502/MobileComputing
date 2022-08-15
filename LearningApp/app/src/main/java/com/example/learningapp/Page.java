@@ -31,7 +31,5 @@ ImageView myImage;
 
         myImage.setImageResource(imgId);
         alpa.setText(value);
-
-
     }
 }
