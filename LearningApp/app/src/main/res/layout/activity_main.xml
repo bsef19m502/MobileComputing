@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,54 +12,57 @@
         android:layout_height="wrap_content"
         android:text="WELCOME!"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141" />
+        android:layout_centerHorizontal="true"
+ />
 
     <Button
         android:id="@+id/code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="40dp"
         android:text="My Code"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+
+        />
 
     <Button
         android:id="@+id/lessons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
+        android:layout_centerHorizontal="true"
         android:text="Lessons"
-        app:layout_constraintBottom_toTopOf="@+id/quiz"
-        app:layout_constraintEnd_toEndOf="@+id/code"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/code" />
+        android:layout_marginTop="40dp"
+    android:layout_below="@+id/code" />
 
     <Button
         android:id="@+id/quiz"
         android:layout_width="105dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="156dp"
         android:text="Quiz"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/lessons"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/lessons" />
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/lessons"
+        android:layout_centerHorizontal="true"
+
+        />
 
     <Button
-        android:id="@+id/list"
+        android:id="@+id/Poems"
         android:layout_width="105dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="44dp"
-        android:text="List"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/lessons"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/lessons" />
+        android:text="Poems"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/quiz"
+        android:layout_centerHorizontal="true"
+  />
+    <Button
+        android:id="@+id/todos"
+        android:layout_width="105dp"
+        android:layout_height="47dp"
+        android:text="todo"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/Poems"
+        android:layout_centerHorizontal="true"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

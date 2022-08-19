@@ -8,8 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.learningapp.todo.Todo;
+
 public class MainActivity extends AppCompatActivity {
-    Button link,lesson,quiz,list;
+    Button link,lesson,quiz,list,todo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
         link=findViewById(R.id.code);
         lesson=findViewById(R.id.lessons);
         quiz=findViewById(R.id.quiz);
-        list=findViewById(R.id.list);
+        list=findViewById(R.id.Poems);
+        todo=findViewById(R.id.todos);
+
 
         link.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent in=new Intent(MainActivity.this,List.class);
+                startActivity(in);
+
+            }
+        });
+        todo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in=new Intent(MainActivity.this, Todo.class);
                 startActivity(in);
 
             }
