@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentApp">
         <activity
-            android:name=".lab5.ViewPagerActivity"
+            android:name=".assignment4.LoginAssignment4"
+            android:exported="false" />
+        <activity
+            android:name=".lab6.SharedPref"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,13 +28,13 @@
             android:name=".assignment4.Base"
             android:exported="false" />
         <activity
-            android:name=".assignment4.LoginAssignment4"
-            android:exported="false"></activity>
+            android:name=".lab4.StudentView"
+            android:exported="false" />
         <activity
             android:name=".lab3.StudentActivity"
             android:exported="false" />
         <activity
-            android:name=".lab4.StudentView"
+            android:name=".lab5.ViewPagerActivity"
             android:exported="false" />
         <activity
             android:name=".Assignment3.Shifts"
