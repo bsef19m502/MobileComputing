@@ -10,10 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentApp">
         <activity
-            android:name=".assignment4.LoginAssignment4"
+            android:name=".noorehooda.ver"
+            android:exported="false" />
+        <activity
+            android:name=".lab6.database.InsertStudent"
             android:exported="false" />
         <activity
             android:name=".lab6.SharedPref"
+            android:exported="false" />
+        <activity
+            android:name=".assignment4.LoginAssignment4"
+            android:exported="false" />
+        <activity
+            android:name=".noorehooda.Main"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
